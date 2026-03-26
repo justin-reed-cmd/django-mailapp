@@ -1,0 +1,45 @@
+body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #2d3e50;
+            color: white;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background: #1abc9c;
+        }
+
+        .topbar {
+            margin-left: 220px;
+            padding: 15px;
+            background: #f4f4f4;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
