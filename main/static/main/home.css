@@ -1,45 +1,100 @@
 body {
-            margin: 0;
-            font-family: Arial;
-        }
+    margin: 0;
+    font-family: Arial;
+    font-size: 16px;
+    background: url(./img28.jpg);
+}
 
-        .sidebar {
-            width: 220px;
-            height: 100vh;
-            background: #2d3e50;
-            color: white;
-            position: fixed;
-        }
+/*  */
+.d-flex {
+    display: flex;
+}
+/*  */
 
-        .sidebar h2 {
-            padding: 20px;
-        }
 
-        .sidebar a {
-            display: block;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-        }
+/**
+* header style
+*/
+header {
+    width: 100%;
+}
+.topbar {
+    width: 100%;
+}
 
-        .sidebar a:hover {
-            background: #1abc9c;
-        }
+/* logo $ menu style */
+.logo-menu-wrap {
+    width: 187px;
+}
 
-        .topbar {
-            margin-left: 220px;
-            padding: 15px;
-            background: #f4f4f4;
-        }
+/* search & help & setting style */
+.search-help-setting-wrap {
+    width: calc(100% - 187px);
+    display: flex;
+    
+}
 
-        .content {
-            margin-left: 220px;
-            padding: 20px;
-        }
+.search-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    height: 50px;
+    padding: 0 15px;
+}
 
-        .card {
-            background: #fff;
-            padding: 15px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-        }
+.search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: #cbd5e1;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+/* google-apps & google-account style */
+.google-apps-account-wrap {
+    width: 100px;
+}
+
+/* ==================================== */
+
+
+/**
+* main style
+*/
+main {
+    width: 100%;
+}
+/* sidebar style */
+.sidebar-wrap {
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* content style */
+.content-wrap {
+    background-color: white;
+    width: calc(100% - 187px - 56px);   
+    height: 90vh;
+}
+
+.top-btns-wrap {
+    
+}
+
+/* side-panel style*/
+.side-panel-wrap {
+    width: 56px;
+    background-color: yellow;
+}
+li {
+    list-style: none;
+}
+
+/* ==================================== */
