@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'main/home.css' %}">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'main/home.css' %}">
+    </head>
 
-    <style>
-        
-    </style>
-</head>
-
-
-<body>
-
-<div class="sidebar">
-    <h2>Menu</h2>
-    <a href="#">Inbox</a>
-    <a href="#">Starred</a>
-    <a href="#">Sent</a>
-</div>
-
-<div class="topbar">
-    <input type="text" placeholder="Search..." style="width: 50%; padding: 8px;">
-</div>
-
-<div class="content">
-    <div class="card">Message 1</div>
-    <div class="card">Message 2</div>
-    <div class="card">Message 3</div>
-</div>
-
-</body>
-
-<!-- <body>
-    <header>
-        <div class="logo">
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </div>
-        <div class="search">
-            <form action="">
-                <input type="text">
-            </form>
-        </div>
-        <div class="">
-
-        </div>
-    </header>
-    <main>
-        <section class="compose-category-wrap">
-            <div class="compose-wrap">
-                Compose
+    <body>
+        <header>
+            <div class="topbar">
+                <div class="logo"></div>
+                <div class="search-wrap">
+                    <form action="">
+                        <input type="text" placeholder="Search..." style="width: 50%; padding: 8px;">
+                    </form>
+                </div>
+                <div class="help-setting-wrap">
+                    <ul>
+                        <li>Help</li>
+                        <li>Setting</li>
+                        <li>Google apps</li>
+                        <li>Google account</li>
+                    </ul>
+                </div>
             </div>
-            <div class="category-wrap">
+        </header>
+
+        <main>
+            <div class="sidebar-wrap">
+                <div class="compose">
+                    Compose
+                </div>
+                <div class="">
+                    <ul>
+                        <li>Inbox</li>
+                        <li>Starred</li>
+                        <li>Snoozed</li>
+                        <li>Sent</li>
+                        <li>Drafts</li>
+                        <li>Spam</li>
+                        <li>Purchase</li>
+                    </ul>
+                </div>           
+            </div>
+
+            <div class="content-wrap">
+                <div class="content">
+                    <div class="content-top">
+                        <div class="top-btns-wrap">
+                            <div class="select">
+                                Select
+                            </div>
+                            <div class="refresh">
+                                Refresh
+                            </div>
+                            <div class="more">
+                                More
+                            </div>
+                        </div>
+                        <div class="pagination"></div>
+                    </div>
+                    <div class="content-main"></div>
+                    <div class="content-bottom"></div>
+                </div>
+            </div>
+
+            <div class="side-panel-wrap">
                 <ul>
-                    <li><a href="">Inbox</a></li>
-                    <li><a href="">Starred</a></li>
-                    <li><a href="">Snoozed</a></li>
-                    <li><a href="">Sent</a></li>
-                    <li><a href="">Drafts</a></li>
-                    <li><a href="">Spam</a></li>
-                    <li><a href="">Purchasses</a></li>
-                    <li><a href="">More</a></li>
+                    <li>Calendar</li>
+                    <li>Keep</li>
+                    <li>Tasks</li>
+                    <li>Contacts</li>
                 </ul>
             </div>
-        </section>
-        <section class="main">
-            <div class="main-content"></div>
-        </section>
-        <section class="sidebar-wrap0">
-            <ul>
-                <li><a href="">Calendar</a></li>
-                <li><a href="">Keep</a></li>
-                <li><a href="">Tasks</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </section>
-    </main>
-</body> -->
+        </main>
+    </body>
 </html>
